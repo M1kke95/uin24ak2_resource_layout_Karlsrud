@@ -21,7 +21,7 @@ header {
 }
 
 
-#test {
+#Acard {
     background-color: white;
     border-top: white;
     width: 100%; 
@@ -36,19 +36,19 @@ header {
 }
 
 
-#test h2
+#Acard h2
 {
     margin-top: 6rem;
     margin-left: 6rem;
 }
 
-#test p{
+#Acard p{
     margin-left: 6rem;
     font-size: 18px;
     max-width: 80%;
 }
 
-#test ul{
+#Acard ul{
     margin-left:4.5rem;
 }
 

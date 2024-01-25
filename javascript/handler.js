@@ -1,5 +1,4 @@
 
-
 let resourceHTML = "";
 
 const firstResource = resources[0];
@@ -16,13 +15,6 @@ resourceHTML += `
     </ul>
 </article>
 `;
-console.log(resources[1])
-if(firstResource.category == "HTML")
-{
-    document.getElementById("test").style.backgroundColor = "white";
-}if(firstResource.category== "CSS"){
-    console.log("detfunker")
-}
 
 function showContent(category){
     const htmlButton = document.querySelector("#HTML button");
@@ -30,7 +22,7 @@ function showContent(category){
     const jsButton = document.querySelector("#js button");
     const reactButton = document.querySelector("#react button")
     const sahcButton = document.querySelector("#sahc button")
-    const article = document.getElementById("test")
+    const article = document.getElementById("Acard")
 
     const resetStyles = (button) => {
         htmlButton.style.backgroundColor = "#2A324B";
@@ -51,7 +43,6 @@ function showContent(category){
 
     }
    
-
     if(category == "HTML"){
         resetStyles();
         activeStyle(htmlButton)
@@ -61,8 +52,8 @@ function showContent(category){
             <p>${resources[0].text}</p>
             <ul>${resources[0].sources.map(source => `<li><a href="${source.url}">${source.title}</a></li>`).join('')}</ul>
         `;
+        
     }else if(category == "CSS"){
-        console.log("CSS button clicked");
         if (cssButton) {
             resetStyles();
             activeStyle(cssButton)
@@ -74,7 +65,6 @@ function showContent(category){
         }
         
     }else if(category === "js"){
-        console.log("JS button clicked");
         if (jsButton) {
             resetStyles();
             activeStyle(jsButton)
@@ -86,7 +76,6 @@ function showContent(category){
         }
     
     }else if(category === "react"){
-        console.log("react button clicked");
         if (reactButton) {
             resetStyles();
             activeStyle(reactButton)
@@ -98,7 +87,6 @@ function showContent(category){
         }
     
     }else if(category === "sahc"){
-        console.log("sahc button clicked");
         if (sahcButton) {
             resetStyles();
             activeStyle(sahcButton)
@@ -111,13 +99,6 @@ function showContent(category){
     
     }
 }
-
-
-
-
-
-
-
 
 const main = document.getElementsByTagName("article")
 
